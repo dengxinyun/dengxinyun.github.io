@@ -6,25 +6,25 @@
     
 
     
-    <title>vue | xinyun.blog</title>
+    <title>小白用vue-cli脚手架来做项目 | xinyun.blog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="vue">
     
-    <meta name="description" content=".article-entry p{margin: 1em}     .textC{text-align: center;}     一开始使用vue只是引入一个js来用，感觉挺好用的，就是页面体验效果没那么好，加载速度比较慢。后来，鼓起勇气在项目中用脚手架，然后就遇到一系列的问题。。。。。。">
+    <meta name="description" content="前言一开始使用vue只是引入一个js来用，感觉挺好用的，就是页面体验效果没那么好，加载速度比较慢。后来，应公司的要求，开始使用vue-cli脚手架来搭建项目，下面简单的介绍一下整体过程startvue-cli 一个简单的构建Vue.js项目的命令行界面。整体过程:    npm install -g vue-cli    npm init webpack vueName    cd vueNam">
 <meta name="keywords" content="vue">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue">
+<meta property="og:title" content="小白用vue-cli脚手架来做项目">
 <meta property="og:url" content="http://yoursite.com/2018/10/30/vue/index.html">
 <meta property="og:site_name" content="xinyun.blog">
-<meta property="og:description" content=".article-entry p{margin: 1em}     .textC{text-align: center;}     一开始使用vue只是引入一个js来用，感觉挺好用的，就是页面体验效果没那么好，加载速度比较慢。后来，鼓起勇气在项目中用脚手架，然后就遇到一系列的问题。。。。。。">
+<meta property="og:description" content="前言一开始使用vue只是引入一个js来用，感觉挺好用的，就是页面体验效果没那么好，加载速度比较慢。后来，应公司的要求，开始使用vue-cli脚手架来搭建项目，下面简单的介绍一下整体过程startvue-cli 一个简单的构建Vue.js项目的命令行界面。整体过程:    npm install -g vue-cli    npm init webpack vueName    cd vueNam">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2018/10/30/vue/img3.jpg">
-<meta property="og:updated_time" content="2018-10-30T08:03:20.451Z">
+<meta property="og:updated_time" content="2018-11-02T07:36:10.180Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue">
-<meta name="twitter:description" content=".article-entry p{margin: 1em}     .textC{text-align: center;}     一开始使用vue只是引入一个js来用，感觉挺好用的，就是页面体验效果没那么好，加载速度比较慢。后来，鼓起勇气在项目中用脚手架，然后就遇到一系列的问题。。。。。。">
+<meta name="twitter:title" content="小白用vue-cli脚手架来做项目">
+<meta name="twitter:description" content="前言一开始使用vue只是引入一个js来用，感觉挺好用的，就是页面体验效果没那么好，加载速度比较慢。后来，应公司的要求，开始使用vue-cli脚手架来搭建项目，下面简单的介绍一下整体过程startvue-cli 一个简单的构建Vue.js项目的命令行界面。整体过程:    npm install -g vue-cli    npm init webpack vueName    cd vueNam">
 <meta name="twitter:image" content="http://yoursite.com/2018/10/30/vue/img3.jpg">
     
 
@@ -148,7 +148,7 @@
                 
     
         <h1 class="article-title" itemprop="name">
-        vue
+        小白用vue-cli脚手架来做项目
         </h1>
     
 
@@ -175,22 +175,26 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <style type="text/css">
-    .article-entry p{margin: 1em}
+            <img src="/2018/10/30/vue/img3.jpg" title="白水寨的泉水">
+<p class="weight">前言</p><br>一开始使用vue只是引入一个js来用，感觉挺好用的，就是页面体验效果没那么好，加载速度比较慢。<br>后来，应公司的要求，开始使用vue-cli脚手架来搭建项目，下面简单的介绍一下整体过程<br><!-- 然后就遇到一系列的问题... --><p class="weight">start</p><br>vue-cli 一个简单的构建Vue.js项目的命令行界面。<br><br>整体过程:<ul class="intro"><br>    <li>npm install -g vue-cli</li><br>    <li>npm init webpack vueName</li><br>    <li>cd vueName</li><br>    <li>npm install</li><br>    <li>npm run dev</li><br></ul><br><p class="weight">提示</p><br>1.需安装node.js和npm<br>  (node.js网址：<a href="http://nodejs.cn/" target="_blank" rel="noopener">http://nodejs.cn/</a>)<br><br>2.中国行情原因，直接安装依赖，有时候会失败。我们一般使用npm的淘宝镜像cnpm。<br>安装cnpm：<br><figure>npm install -g cnpm -registry=<a><a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></a></figure><br><p class="weight">打包部署</p><br>项目开发完成之后,可以使用npm run build进行打包工作<br>打包完成之后,会生成dist文件夹,项目上线时候,只需要将dist文件夹放到服务器就行了。<br><p class="weight">UI(PC端)</p><br>1.安装element-ui:<br><figure>cnpm  i  element-ui  s</figure><br>在main.js里配置:<br><figure>import ElementUI from ‘element-ui’;<br>import ‘element-ui/lib/theme-chalk/index.css’;<br>Vue.use(ElementUI);</figure>以上代码便完成了Element的引入。需注意，样式文件需要单独引入。<br><br>2.安装axios(用于请求数据):<br><figure>npm install axios</figure><br>在main.js里配置:<br><figure>import axios from ‘axios’<br>Vue.prototype.$ajax = axios</figure>到这里需注意：当我们用post请求的时候，出现请求方法为OPTIONS的问题，这时候我们只需要把格式为json的参数用qs插件转换一下就好了。<br>安装qs：<br><figure>cnpm install qs</figure>到这里还需要注意，当我们在main.js里引入的话，没有效果，必须在每一个vue文件里面单独引入。（这里我也很困惑，还没找到原因，希望知道的你们给我留言，谢谢）<br><br><br><p class="weight">UI(移动端)</p><br><ul class="intro"><br>    <li>npm install mint-ui</li><br>    <li>npm install weui(微信端样式)</li><br>    <li>npm install axios(请求数据)</li><br></ul><br><br><br>今天就简单的说完啦！<br><p></p>
+
+
+<style type="text/css">
+    .article-entry p{margin-bottom: 0;}
+    .weight{font-weight: bold; font-size: 24px; margin-bottom: 0!important;}
     .textC{text-align: center;}
+    .intro li{line-height: 0.2;}
+    .article-entry ul.intro, .article-entry ol, .article-entry dl{margin: 0}
+    figure{background: #000; color: #fff; margin: 10px 0; padding: 20px 40px;}
+    figure a{color: #fff!important;}
 </style>
-
-
-<img src="/2018/10/30/vue/img3.jpg" title="白水寨的泉水">
-<p>一开始使用vue只是引入一个js来用，感觉挺好用的，就是页面体验效果没那么好，加载速度比较慢。<br>后来，鼓起勇气在项目中用脚手架，然后就遇到一系列的问题。。。。。。</p>
-
         </div>
         <footer class="article-footer">
             
 
 
 
-    <a data-url="http://yoursite.com/2018/10/30/vue/" data-id="cjnwiqavl0005b0qslsi72gv4" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yoursite.com/2018/10/30/vue/" data-id="cjo3xr8u1000bkgqs4divj4tg" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -363,6 +367,46 @@
                     <li>
                         
                         <div class="item-thumbnail">
+                            <a href="/2018/11/02/mini-program/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2018/11/02/mini-program/img2.png)" alt="mini-program笔记" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/11/02/mini-program/" class="title">mini-program笔记</a></p>
+                            <p class="item-date"><time datetime="2018-11-02T07:35:04.000Z" itemprop="datePublished">2018-11-02</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/11/02/weui/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2018/11/02/weui/img15.jpg)" alt="weui笔记" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/11/02/weui/" class="title">weui笔记</a></p>
+                            <p class="item-date"><time datetime="2018-11-02T07:34:17.000Z" itemprop="datePublished">2018-11-02</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
                             <a href="/2018/10/30/blog/" class="thumbnail">
     
     
@@ -386,7 +430,7 @@
                             <a href="/2018/10/30/vue/" class="thumbnail">
     
     
-        <span style="background-image:url(/2018/10/30/vue/img3.jpg)" alt="vue" class="thumbnail-image"></span>
+        <span style="background-image:url(/2018/10/30/vue/img3.jpg)" alt="小白用vue-cli脚手架来做项目" class="thumbnail-image"></span>
     
     
 </a>
@@ -395,7 +439,7 @@
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/10/30/vue/" class="title">vue</a></p>
+                            <p class="item-title"><a href="/2018/10/30/vue/" class="title">小白用vue-cli脚手架来做项目</a></p>
                             <p class="item-date"><time datetime="2018-10-30T03:55:54.000Z" itemprop="datePublished">2018-10-30</time></p>
                         </div>
                     </li>
@@ -420,26 +464,6 @@
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/10/29/aboutIT/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/2018/10/29/aboutIT/img5.jpg)" alt="其实程序员是这样的" class="thumbnail-image"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/10/29/aboutIT/" class="title">其实程序员是这样的</a></p>
-                            <p class="item-date"><time datetime="2018-10-29T07:00:18.000Z" itemprop="datePublished">2018-10-29</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -452,7 +476,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">4</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">4</span></li></ul>
         </div>
     </div>
 
@@ -462,7 +486,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">标签</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/">vue</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/关于我/">关于我</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mini-program/">mini-program</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/">vue</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/weui/">weui</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/关于我/">关于我</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -472,7 +496,7 @@
     <div class="widget-wrap widget-float">
         <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud">
-            <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/关于我/" style="font-size: 10px;">关于我</a>
+            <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/mini-program/" style="font-size: 10px;">mini-program</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/weui/" style="font-size: 10px;">weui</a> <a href="/tags/关于我/" style="font-size: 10px;">关于我</a>
         </div>
     </div>
 
