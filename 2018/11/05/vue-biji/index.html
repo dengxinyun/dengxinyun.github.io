@@ -12,19 +12,19 @@
     
         <meta name="keywords" content="vue">
     
-    <meta name="description" content="行内样式背景图片的写法：:style=”{backgroundImage:’url(‘ + imgURL + posterInfo.qrcode_bg + ‘)’,’min-height’:wH+’px’}”      .weight{font-weight: bold; font-size: 24px; margin-bottom: 0!important;}     .article-ent">
+    <meta name="description" content="样式     行内样式背景图片的写法：    :style=”{backgroundImage:’url(‘ + imgURL + posterInfo.qrcode_bg + ‘)’,’min-height’:wH+’px’}”  轮播     mint-ui组件，轮播图是用定位的方式排版的，需要设定一个高度。可以额外引入一个轮播插件：推荐vue-swiper-component    参照">
 <meta name="keywords" content="vue">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue-笔记">
 <meta property="og:url" content="http://yoursite.com/2018/11/05/vue-biji/index.html">
 <meta property="og:site_name" content="xinyun.blog">
-<meta property="og:description" content="行内样式背景图片的写法：:style=”{backgroundImage:’url(‘ + imgURL + posterInfo.qrcode_bg + ‘)’,’min-height’:wH+’px’}”      .weight{font-weight: bold; font-size: 24px; margin-bottom: 0!important;}     .article-ent">
+<meta property="og:description" content="样式     行内样式背景图片的写法：    :style=”{backgroundImage:’url(‘ + imgURL + posterInfo.qrcode_bg + ‘)’,’min-height’:wH+’px’}”  轮播     mint-ui组件，轮播图是用定位的方式排版的，需要设定一个高度。可以额外引入一个轮播插件：推荐vue-swiper-component    参照">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2018/11/05/vue-biji/img10.jpg">
-<meta property="og:updated_time" content="2018-11-05T11:07:22.110Z">
+<meta property="og:updated_time" content="2018-11-07T09:54:55.104Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue-笔记">
-<meta name="twitter:description" content="行内样式背景图片的写法：:style=”{backgroundImage:’url(‘ + imgURL + posterInfo.qrcode_bg + ‘)’,’min-height’:wH+’px’}”      .weight{font-weight: bold; font-size: 24px; margin-bottom: 0!important;}     .article-ent">
+<meta name="twitter:description" content="样式     行内样式背景图片的写法：    :style=”{backgroundImage:’url(‘ + imgURL + posterInfo.qrcode_bg + ‘)’,’min-height’:wH+’px’}”  轮播     mint-ui组件，轮播图是用定位的方式排版的，需要设定一个高度。可以额外引入一个轮播插件：推荐vue-swiper-component    参照">
 <meta name="twitter:image" content="http://yoursite.com/2018/11/05/vue-biji/img10.jpg">
     
 
@@ -176,9 +176,21 @@
         
         <div class="article-entry" itemprop="articleBody">
             <img src="/2018/11/05/vue-biji/img10.jpg" title="吴川海边">
-<p>行内样式背景图片的写法：<br>:style=”{backgroundImage:’url(‘ + imgURL + posterInfo.qrcode_bg + ‘)’,’min-height’:wH+’px’}”</p>
+<ul><br> <li><span class="weight">样式</span><br>     行内样式背景图片的写法：<br>    <span class="important">:style=”{backgroundImage:’url(‘ + imgURL + posterInfo.qrcode_bg + ‘)’,’min-height’:wH+’px’}”</span><br> </li><br> <li><span class="weight">轮播</span><br>     mint-ui组件，轮播图是用定位的方式排版的，需要设定一个高度。可以额外引入一个轮播插件：推荐vue-swiper-component<br>    参照地址：<a href="https://www.cnblogs.com/qq735675958/p/8423277.html" target="_blank" rel="noopener">https://www.cnblogs.com/qq735675958/p/8423277.html</a><br>    <figure>cnpm i vue-swiper-component –save</figure><br>    路由懒加载就是在配置路由的时候将component配置成 ：<br>    <span class="important">component: resolve =&gt; require([‘components/About.vue’], resolve)</span><br> </li><br> <li><span class="weight">缓存、刷新</span><br>     vue使用keep-alive实现数据缓存不刷新，主要是在入口APP.vue里面实现，<br>    献上地址：<a href="https://segmentfault.com/a/1190000011640453" target="_blank" rel="noopener">https://segmentfault.com/a/1190000011640453</a><br> </li><br> <li><span class="weight">缓存、位置</span><br>     vue-router从详情页返回列表页时返回到上次滚动位置：结合上面的keep-alive,用下面的scrollBehavior方法<br><br>    1.router文件中设置为 <span class="important">mode: ‘history’,</span> 模式<br><br>    2.router设置:<br>    <p class="important">scrollBehavior (to, from, savedPosition) {<br>       &nbsp; &nbsp; if (savedPosition) {<br>          &nbsp; &nbsp; &nbsp; return savedPosition<br>       &nbsp; &nbsp; } else {<br>          &nbsp; &nbsp; &nbsp; return { x: 0, y: 0 }<br>       &nbsp; &nbsp; }<br>      }</p><br><br>    3.详情页返回列表页时， 用 history.back() 返回<br> </li><br> <li><br><br> </li><br> <li><br><br> </li><br></ul>
+
+
+
+
+
+
+
+
+
+
+
+
 <style type="text/css">
-    .weight{font-weight: bold; font-size: 24px; margin-bottom: 0!important;}
+    .weight{font-weight: bold; font-size: 20px; margin-bottom: 0!important;}
     .article-entry ul.intro{margin-bottom: 0;}
     .intro li{line-height: 0.2;}
     figure{background: #000; color: #fff; margin: 10px 0; padding: 20px 40px;}
@@ -186,6 +198,9 @@
     .cd_img img{margin: 10px 0 0 0!important;}
     .deploy span{padding-left: 1em;}
     .deploy a{color: #fff;}
+
+    code{margin: 0; background: #fff;}
+    .important{color: red;}
 </style>
         </div>
         <footer class="article-footer">
@@ -193,7 +208,7 @@
 
 
 
-    <a data-url="http://yoursite.com/2018/11/05/vue-biji/" data-id="cjo5674s3000490qszzylbz45" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yoursite.com/2018/11/05/vue-biji/" data-id="cjo7xrqhr0006ckqstb7w50tl" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
